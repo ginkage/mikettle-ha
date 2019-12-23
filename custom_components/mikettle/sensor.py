@@ -2,8 +2,8 @@
 from datetime import timedelta
 import logging
 
-from mikettle.mikettle import MiKettle
-from mikettle.mikettle import (
+from .mikettle import MiKettle
+from .mikettle import (
     MI_ACTION,
     MI_MODE,
     MI_SET_TEMPERATURE,
@@ -30,7 +30,7 @@ _LOGGER = logging.getLogger(__name__)
 
 CONF_PRODUCT_ID = "product_id"
 
-DEFAULT_PRODUCT_ID = 275
+DEFAULT_PRODUCT_ID = 131
 DEFAULT_FORCE_UPDATE = False
 DEFAULT_NAME = "Mi Kettle"
 DEFAULT_SCAN_INTERVAL = timedelta(seconds=60)
